@@ -1,6 +1,6 @@
 const lista = document.querySelector('.listaFilmes')
 
-fetch(`https://filmes-acessiveis.herokuapp.com`
+fetch(`https://filmes-acessiveis.herokuapp.com/filmes`
     ).then((response) => {
         return response.json();
     })

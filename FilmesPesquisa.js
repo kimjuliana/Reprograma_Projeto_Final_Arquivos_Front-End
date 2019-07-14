@@ -6,7 +6,7 @@ button.addEventListener('click', (evento) =>{
     const genero = document.querySelector('.genero').value
     listaFilmes.innerHTML="";
 
-    fetch(`http://localhost:3000/filmes/search/?genero=${genero}`
+    fetch(`https://filmes-acessiveis.herokuapp.com/filmes/search/?genero=${genero}`
  
     ).then((response) => {
         return response.json();
